@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <form class="signup-form">
+      <h1>Signup</h1>
+
+      <div class="form-group">
+        <input
+          type="text"
+          placeholder="Full Name"
+          required
+          minlength="3"
+        />
+      </div>
+
+      <div class="form-group">
+        <input
+          type="email"
+          placeholder="Email"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <input
+          type="password"
+          placeholder="Password"
+          required
+          minlength="8"
+          pattern=".{8,}"
+          title="Password must be at least 8 characters"
+        />
+      </div>
+
+      <div class="form-group">
+        <input
+          type="password"
+          placeholder="Confirm Password"
+          required
+          minlength="8"
+        />
+      </div>
+
+      <div class="form-group">
+        <input type="date" required />
+      </div>
+
+      <div class="radio-group">
+        <label>
+          <input type="radio" name="profession" required />
+          Student
+        </label>
+
+        <label>
+          <input type="radio" name="profession" />
+          Employee
+        </label>
+      </div>
+
+      <div class="checkbox-group">
+        <label>
+          <input type="checkbox" required />
+          I agree to the terms and conditions
+        </label>
+      </div>
+
+      <button type="submit">Signup</button>
+    </form>
+  </body>
+</html>
